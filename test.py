@@ -1,19 +1,19 @@
-responces={}
+class Dog:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
 
-act_flag=True
+    def sit(self):
+        print(f"{self.name} is sitting")
 
-while act_flag:
-    name=input("what is your name?:")
-    responce=input("mountain?")
+    def roll(self):
+        print(f"{self.name} is rolling")
 
-    responces[name]=responce
+my_dog=Dog('carp',6)
 
-    repeat=input("agein?yes/no")
+print(my_dog.name)
+print(my_dog.age)
+my_dog.sit()
+my_dog.roll()
 
-    if repeat == "no":
-        act_flag=False
-    
-print("---result---")
 
-for name,res in responces.items():
-    print(f"{name} ga {res}")
