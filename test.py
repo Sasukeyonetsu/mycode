@@ -1,12 +1,19 @@
-ssk={'color':'red','car':'RAIZE'}
-print(ssk['color'])
+responces={}
 
-ssk_value=ssk.get('point','nainai')
-print(ssk_value)
+act_flag=True
 
-for i,j in ssk.items():
-    print(i)
-    print(j)
+while act_flag:
+    name=input("what is your name?:")
+    responce=input("mountain?")
 
-for i in ssk.keys():
-    print(i)
+    responces[name]=responce
+
+    repeat=input("agein?yes/no")
+
+    if repeat == "no":
+        act_flag=False
+    
+print("---result---")
+
+for name,res in responces.items():
+    print(f"{name} ga {res}")
