@@ -1,25 +1,12 @@
-hairetsu=[]
-hairetsu.append("sasuke")
-hairetsu.append("ffff")
-hairetsu.append("kkkkkkk")
-print(hairetsu)
+ssk={'color':'red','car':'RAIZE'}
+print(ssk['color'])
 
-hairetsu.insert(1,"yonetsu")
-print(hairetsu)
-print(hairetsu[0])
+ssk_value=ssk.get('point','nainai')
+print(ssk_value)
 
-hairetsu.pop(0)
-print(hairetsu[0])
-print(hairetsu)
+for i,j in ssk.items():
+    print(i)
+    print(j)
 
-for hp in hairetsu:
-    print(hp)
-
-a=5
-
-if a >= 10:
-    print("ssk")
-else:
-    print("ynt")
-
-
+for i in ssk.keys():
+    print(i)
