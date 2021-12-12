@@ -4,7 +4,7 @@
 
 .back{
     background-size: cover;
-    background-image: url(images/background.jpg),radial-gradient(#aef5fa, #ffffff);
+    background-image: url(/images/background.jpg),radial-gradient(#aef5fa, #ffffff);
     background-repeat: no-repeat;
     background-position: center;
     margin: 0;
